@@ -1,0 +1,9 @@
+<?php
+$MESS['OTUS_DOCTORS_PARAMS_GROUP_DATA_SOURCE'] = 'Источник данных';
+$MESS['OTUS_DOCTORS_PARAMS_GROUP_SEF'] = 'ЧПУ';
+$MESS['OTUS_DOCTORS_PARAM_IBLOCK_DOCTORS_ID'] = 'ID инфоблока "Врачи"';
+$MESS['OTUS_DOCTORS_PARAM_IBLOCK_PROCEDURES_ID'] = 'ID инфоблока "Процедуры"';
+$MESS['OTUS_DOCTORS_PARAM_PROP_PROCEDURES_CODE'] = 'Код свойства процедур у врача';
+$MESS['OTUS_DOCTORS_PARAM_SEF_MODE'] = 'Включить ЧПУ';
+$MESS['OTUS_DOCTORS_PARAM_SEF_FOLDER'] = 'Каталог ЧПУ';
+$MESS['OTUS_DOCTORS_PARAM_SEF_URL_TEMPLATES'] = 'Шаблоны URL';
