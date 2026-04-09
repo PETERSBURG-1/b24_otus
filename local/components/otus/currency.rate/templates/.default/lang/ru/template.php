@@ -1,0 +1,3 @@
+<?php
+$MESS['OTUS_CURRENCY_RATE_TEMPLATE_SELECTED'] = 'Выбранная валюта';
+$MESS['OTUS_CURRENCY_RATE_TEMPLATE_RATE'] = 'Текущий курс';

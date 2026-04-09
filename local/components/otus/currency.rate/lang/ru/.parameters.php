@@ -1,0 +1,2 @@
+<?php
+$MESS['OTUS_CURRENCY_RATE_PARAM_CURRENCY'] = 'Валюта';
