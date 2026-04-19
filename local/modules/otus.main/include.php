@@ -1,1 +1,15 @@
-<?phpuse Bitrix\Main\Loader;Loader::registerAutoLoadClasses(    'otus.main',    [        'Otus\\Main\\Crm\\EntityDetailsTabs' => 'lib/Crm/EntityDetailsTabs.php',        'Otus\\Main\\Model\\CrmEntityDataTable' => 'lib/Model/CrmEntityDataTable.php',        'Otus\\Main\\Model\\AbstractIblockPropertyMultipleValuesTable' => 'lib/Model/AbstractIblockPropertyMultipleValuesTable.php',        'Otus\\Main\\Model\\AbstractIblockPropertyValuesTable' => 'lib/Model/AbstractIblockPropertyValuesTable.php',        'Otus\\Main\\Model\\DoctorProcedureOfferTable' => 'lib/Model/DoctorProcedureOfferTable.php',        'Otus\\Main\\Model\\DoctorsPropertyValuesMultipleTable' => 'lib/Model/DoctorsPropertyValuesMultipleTable.php',        'Otus\\Main\\Model\\DoctorsPropertyValuesTable' => 'lib/Model/DoctorsPropertyValuesTable.php',        'Otus\\Main\\Model\\ProceduresPropertyValuesTable' => 'lib/Model/ProceduresPropertyValuesTable.php',    ]);
+<?php
+
+use Bitrix\Main\Loader;
+
+Loader::registerAutoLoadClasses(
+    'otus.main',
+    [
+        'Otus\\Main\\Crm\\EntityDetailsTabs' => 'lib/Crm/EntityDetailsTabs.php',
+        'Otus\\Main\\Model\\CrmEntityDataTable' => 'lib/Model/CrmEntityDataTable.php',
+        'Otus\\Main\\Iblock\\DoctorBookingProperty' => 'lib/Iblock/DoctorBookingProperty.php',
+        'Otus\\Main\\Iblock\\DoctorBookingSync' => 'lib/Iblock/DoctorBookingSync.php',
+        'Otus\\Main\\Service\\DoctorProcedureService' => 'lib/Service/DoctorProcedureService.php',
+        'Otus\\Main\\Service\\BookingService' => 'lib/Service/BookingService.php',
+    ]
+);

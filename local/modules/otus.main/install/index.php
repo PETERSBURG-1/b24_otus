@@ -4,6 +4,8 @@ use Bitrix\Main\Application;
 use Bitrix\Main\EventManager;
 use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
+use Otus\Main\Iblock\DoctorBookingProperty;
+use Otus\Main\Iblock\DoctorBookingSync;
 use Otus\Main\Model\CrmEntityDataTable;
 
 Loc::loadMessages(__FILE__);
@@ -117,6 +119,30 @@ class otus_main extends CModule
             'Otus\Main\Crm\EntityDetailsTabs',
             'onEntityDetailsTabsInitialized'
         );
+
+        EventManager::getInstance()->registerEventHandler(
+            'iblock',
+            'OnIBlockPropertyBuildList',
+            $this->MODULE_ID,
+            DoctorBookingProperty::class,
+            'getUserTypeDescription'
+        );
+
+        EventManager::getInstance()->registerEventHandler(
+            'iblock',
+            'OnAfterIBlockElementAdd',
+            $this->MODULE_ID,
+            DoctorBookingSync::class,
+            'onAfterIBlockElementAdd'
+        );
+
+        EventManager::getInstance()->registerEventHandler(
+            'iblock',
+            'OnAfterIBlockElementUpdate',
+            $this->MODULE_ID,
+            DoctorBookingSync::class,
+            'onAfterIBlockElementUpdate'
+        );
     }
 
     /**
@@ -133,6 +159,30 @@ class otus_main extends CModule
             'Otus\Main\Crm\EntityDetailsTabs',
             'onEntityDetailsTabsInitialized'
         );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'iblock',
+            'OnIBlockPropertyBuildList',
+            $this->MODULE_ID,
+            DoctorBookingProperty::class,
+            'getUserTypeDescription'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'iblock',
+            'OnAfterIBlockElementAdd',
+            $this->MODULE_ID,
+            DoctorBookingSync::class,
+            'onAfterIBlockElementAdd'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'iblock',
+            'OnAfterIBlockElementUpdate',
+            $this->MODULE_ID,
+            DoctorBookingSync::class,
+            'onAfterIBlockElementUpdate'
+        );
     }
 
     /**
@@ -148,6 +198,20 @@ class otus_main extends CModule
             true,
             true
         );
+
+        CopyDirFiles(
+            __DIR__ . '/js',
+            $_SERVER['DOCUMENT_ROOT'] . '/local/js',
+            true,
+            true
+        );
+
+        CopyDirFiles(
+            __DIR__ . '/tools',
+            $_SERVER['DOCUMENT_ROOT'] . '/bitrix/tools',
+            true,
+            true
+        );
     }
 
     /**
@@ -158,5 +222,7 @@ class otus_main extends CModule
     public function UnInstallFiles()
     {
         DeleteDirFilesEx('/local/components/otus/crm.entity.data.grid');
+        DeleteDirFilesEx('/local/js/otus/main/doctorbooking');
+        DeleteDirFilesEx('/bitrix/tools/otus.main/doctor_booking.php');
     }
 }
