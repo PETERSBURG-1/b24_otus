@@ -11,5 +11,7 @@ Loader::registerAutoLoadClasses(
         'Otus\\Main\\Iblock\\DoctorBookingSync' => 'lib/Iblock/DoctorBookingSync.php',
         'Otus\\Main\\Service\\DoctorProcedureService' => 'lib/Service/DoctorProcedureService.php',
         'Otus\\Main\\Service\\BookingService' => 'lib/Service/BookingService.php',
+        'Otus\\Main\\Ui\\BeginDateButton' => 'lib/Ui/BeginDateButton.php',
+        'Otus\\Main\\Controllers\\TimemanActions\\Timeman' => 'lib/Controllers/TimemanActions/Timeman.php',
     ]
 );

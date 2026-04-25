@@ -7,6 +7,7 @@ use Bitrix\Main\Localization\Loc;
 use Otus\Main\Iblock\DoctorBookingProperty;
 use Otus\Main\Iblock\DoctorBookingSync;
 use Otus\Main\Model\CrmEntityDataTable;
+use Otus\Main\Ui\BeginDateButton;
 
 Loc::loadMessages(__FILE__);
 
@@ -143,6 +144,14 @@ class otus_main extends CModule
             DoctorBookingSync::class,
             'onAfterIBlockElementUpdate'
         );
+
+        EventManager::getInstance()->registerEventHandler(
+            'main',
+            'OnProlog',
+            $this->MODULE_ID,
+            BeginDateButton::class,
+            'onProlog'
+        );
     }
 
     /**
@@ -182,6 +191,14 @@ class otus_main extends CModule
             $this->MODULE_ID,
             DoctorBookingSync::class,
             'onAfterIBlockElementUpdate'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'main',
+            'OnProlog',
+            $this->MODULE_ID,
+            BeginDateButton::class,
+            'onProlog'
         );
     }
 
@@ -223,6 +240,7 @@ class otus_main extends CModule
     {
         DeleteDirFilesEx('/local/components/otus/crm.entity.data.grid');
         DeleteDirFilesEx('/local/js/otus/main/doctorbooking');
+        DeleteDirFilesEx('/local/js/otus/main/begin_date_button');
         DeleteDirFilesEx('/bitrix/tools/otus.main/doctor_booking.php');
     }
 }
