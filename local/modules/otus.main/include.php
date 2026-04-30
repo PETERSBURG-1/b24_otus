@@ -13,5 +13,8 @@ Loader::registerAutoLoadClasses(
         'Otus\\Main\\Service\\BookingService' => 'lib/Service/BookingService.php',
         'Otus\\Main\\Ui\\BeginDateButton' => 'lib/Ui/BeginDateButton.php',
         'Otus\\Main\\Controllers\\TimemanActions\\Timeman' => 'lib/Controllers/TimemanActions/Timeman.php',
+        'Otus\\Main\\Service\\DadataClient' => 'lib/Service/DadataClient.php',
+        'Otus\\Main\\Service\\CrmCompanyService' => 'lib/Service/CrmCompanyService.php',
+        'Otus\\Main\\Service\\CompanyOrderService' => 'lib/Service/CompanyOrderService.php',
     ]
 );

@@ -1,0 +1,6 @@
+<?php
+
+$MESS['OTUS_COMPANY_BY_INN_ACTIVITY_MODULE_ERROR'] = 'Модуль otus.main не установлен.';
+$MESS['OTUS_COMPANY_BY_INN_ACTIVITY_SUCCESS_LOG'] = 'Компания создана/найдена: #COMPANY_ID#.';
+$MESS['OTUS_COMPANY_BY_INN_ACTIVITY_FIELD_INN'] = 'ИНН компании';
+$MESS['OTUS_COMPANY_BY_INN_ACTIVITY_FIELD_RESPONSIBLE_ID'] = 'ID ответственного';
