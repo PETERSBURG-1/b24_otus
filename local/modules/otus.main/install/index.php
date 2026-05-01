@@ -6,6 +6,7 @@ use Bitrix\Main\Loader;
 use Bitrix\Main\Localization\Loc;
 use Otus\Main\Iblock\DoctorBookingProperty;
 use Otus\Main\Iblock\DoctorBookingSync;
+use Otus\Main\Iblock\RequestDealSync;
 use Otus\Main\Model\CrmEntityDataTable;
 use Otus\Main\Ui\BeginDateButton;
 
@@ -145,6 +146,64 @@ class otus_main extends CModule
             'onAfterIBlockElementUpdate'
         );
 
+
+        EventManager::getInstance()->registerEventHandler(
+            'iblock',
+            'OnAfterIBlockElementAdd',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterIBlockElementAdd'
+        );
+
+        EventManager::getInstance()->registerEventHandler(
+            'iblock',
+            'OnAfterIBlockElementUpdate',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterIBlockElementUpdate'
+        );
+
+        EventManager::getInstance()->registerEventHandler(
+            'iblock',
+            'OnBeforeIBlockElementDelete',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onBeforeIBlockElementDelete'
+        );
+
+
+        EventManager::getInstance()->registerEventHandler(
+            'iblock',
+            'OnAfterIBlockElementSetPropertyValuesEx',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterIBlockElementSetPropertyValuesEx'
+        );
+
+        EventManager::getInstance()->registerEventHandler(
+            'crm',
+            'OnAfterCrmDealAdd',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterCrmDealAdd'
+        );
+
+        EventManager::getInstance()->registerEventHandler(
+            'crm',
+            'OnAfterCrmDealUpdate',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterCrmDealUpdate'
+        );
+
+        EventManager::getInstance()->registerEventHandler(
+            'crm',
+            'OnBeforeCrmDealDelete',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onBeforeCrmDealDelete'
+        );
+
         EventManager::getInstance()->registerEventHandler(
             'main',
             'OnProlog',
@@ -191,6 +250,64 @@ class otus_main extends CModule
             $this->MODULE_ID,
             DoctorBookingSync::class,
             'onAfterIBlockElementUpdate'
+        );
+
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'iblock',
+            'OnAfterIBlockElementAdd',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterIBlockElementAdd'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'iblock',
+            'OnAfterIBlockElementUpdate',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterIBlockElementUpdate'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'iblock',
+            'OnBeforeIBlockElementDelete',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onBeforeIBlockElementDelete'
+        );
+
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'iblock',
+            'OnAfterIBlockElementSetPropertyValuesEx',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterIBlockElementSetPropertyValuesEx'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'crm',
+            'OnAfterCrmDealAdd',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterCrmDealAdd'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'crm',
+            'OnAfterCrmDealUpdate',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onAfterCrmDealUpdate'
+        );
+
+        EventManager::getInstance()->unRegisterEventHandler(
+            'crm',
+            'OnBeforeCrmDealDelete',
+            $this->MODULE_ID,
+            RequestDealSync::class,
+            'onBeforeCrmDealDelete'
         );
 
         EventManager::getInstance()->unRegisterEventHandler(

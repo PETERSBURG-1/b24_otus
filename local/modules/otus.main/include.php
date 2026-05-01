@@ -9,6 +9,7 @@ Loader::registerAutoLoadClasses(
         'Otus\\Main\\Model\\CrmEntityDataTable' => 'lib/Model/CrmEntityDataTable.php',
         'Otus\\Main\\Iblock\\DoctorBookingProperty' => 'lib/Iblock/DoctorBookingProperty.php',
         'Otus\\Main\\Iblock\\DoctorBookingSync' => 'lib/Iblock/DoctorBookingSync.php',
+        'Otus\\Main\\Iblock\\RequestDealSync' => 'lib/Iblock/RequestDealSync.php',
         'Otus\\Main\\Service\\DoctorProcedureService' => 'lib/Service/DoctorProcedureService.php',
         'Otus\\Main\\Service\\BookingService' => 'lib/Service/BookingService.php',
         'Otus\\Main\\Ui\\BeginDateButton' => 'lib/Ui/BeginDateButton.php',
