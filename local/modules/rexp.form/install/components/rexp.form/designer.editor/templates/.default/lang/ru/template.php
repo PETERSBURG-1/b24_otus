@@ -1,0 +1,26 @@
+<?php
+$MESS['REXP_FORM_EDITOR_FORM_LABEL'] = 'Форма';
+$MESS['REXP_FORM_EDITOR_NEW_FORM'] = 'Новая форма';
+$MESS['REXP_FORM_EDITOR_DIRTY_HINT'] = 'Есть несохранённые изменения';
+$MESS['REXP_FORM_EDITOR_DIAGNOSTICS'] = 'Диагностика';
+$MESS['REXP_FORM_EDITOR_DIAGNOSTICS_PROGRESS'] = 'Проверяем...';
+$MESS['REXP_FORM_EDITOR_EXPORT'] = 'Экспорт';
+$MESS['REXP_FORM_EDITOR_EXPORT_PROGRESS'] = 'Готовим...';
+$MESS['REXP_FORM_EDITOR_SAVE'] = 'Сохранить форму';
+$MESS['REXP_FORM_EDITOR_SAVE_PROGRESS'] = 'Сохраняем...';
+$MESS['REXP_FORM_EDITOR_TAB_DRAFTS'] = 'Черновики';
+$MESS['REXP_FORM_EDITOR_TAB_DIAGNOSTICS'] = 'Диагностика';
+$MESS['REXP_FORM_EDITOR_TAB_EXCHANGE'] = 'Импорт / экспорт';
+$MESS['REXP_FORM_EDITOR_PANEL_DRAFTS'] = 'Черновики формы';
+$MESS['REXP_FORM_EDITOR_EXCHANGE_EXPORT'] = 'Экспорт';
+$MESS['REXP_FORM_EDITOR_EXCHANGE_IMPORT'] = 'Импорт';
+$MESS['REXP_FORM_EDITOR_IMPORT_HINT'] = 'Импорт создаёт новую форму в модуле rexp.form.';
+$MESS['REXP_FORM_EDITOR_IMPORT_ACTION'] = 'Импортировать';
+$MESS['REXP_FORM_EDITOR_IMPORT_PROGRESS'] = 'Импортируем...';
+$MESS['REXP_FORM_EDITOR_DRAFT_SAVE_SUCCESS'] = 'Черновик сохранён';
+$MESS['REXP_FORM_EDITOR_DRAFT_SAVE_ERROR'] = 'Не удалось сохранить черновик';
+$MESS['REXP_FORM_EDITOR_DRAFT_RESTORE_SUCCESS'] = 'Серверный черновик восстановлен';
+$MESS['REXP_FORM_EDITOR_DRAFT_DELETE_SUCCESS'] = 'Черновик удалён';
+$MESS['REXP_FORM_EDITOR_SUBTITLE'] = 'Интерфейс визуального редактора формы';
+$MESS['REXP_FORM_EDITOR_TAB_BIZPROC'] = 'Шаблоны БП';
+$MESS['REXP_FORM_EDITOR_CORE_LOAD_ERROR'] = 'Не удалось загрузить JS-ядро Битрикс24 для редактора формы. Обновите страницу или проверьте подключение main.core.';

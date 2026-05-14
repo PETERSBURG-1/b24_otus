@@ -1,0 +1,4 @@
+<?php
+$MESS['REXP_FORM_CMP_DESIGNER_VERSIONS_DESCRIPTION_001'] = 'Конструктор форм: версии';
+$MESS['REXP_FORM_CMP_DESIGNER_VERSIONS_DESCRIPTION_002'] = 'История версий формы';
+$MESS['REXP_FORM_CMP_DESIGNER_VERSIONS_DESCRIPTION_003'] = 'Конструктор форм Rexp';

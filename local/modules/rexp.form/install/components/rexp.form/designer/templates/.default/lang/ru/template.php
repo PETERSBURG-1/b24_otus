@@ -1,0 +1,21 @@
+<?php
+$MESS['REXP_FORM_LIST_HINT'] = 'Создавайте, редактируйте и публикуйте внутренние формы портала.';
+$MESS['REXP_FORM_LIST_NEW'] = 'Новая форма';
+$MESS['REXP_FORM_LIST_SETTINGS'] = 'Настройки';
+$MESS['REXP_FORM_LIST_BULK_LABEL'] = 'Групповые действия:';
+$MESS['REXP_FORM_LIST_BULK_SELECT'] = 'Выберите действие';
+$MESS['REXP_FORM_LIST_BULK_DUPLICATE'] = 'Создать копии';
+$MESS['REXP_FORM_LIST_BULK_ARCHIVE'] = 'Перенести в архив';
+$MESS['REXP_FORM_LIST_BULK_RESTORE'] = 'Вернуть из архива';
+$MESS['REXP_FORM_LIST_BULK_DELETE'] = 'Удалить';
+$MESS['REXP_FORM_LIST_BULK_APPLY'] = 'Применить';
+$MESS['REXP_FORM_LIST_AJAX_UNAVAILABLE'] = 'AJAX Битрикс недоступен.';
+$MESS['REXP_FORM_LIST_ACTION_SUCCESS'] = 'Действие выполнено.';
+$MESS['REXP_FORM_LIST_ACTION_ERROR'] = 'Не удалось выполнить действие.';
+$MESS['REXP_FORM_LIST_SELECT_ACTION'] = 'Выберите действие.';
+$MESS['REXP_FORM_LIST_CONFIRM_DUPLICATE'] = 'Создать копии выбранных форм?';
+$MESS['REXP_FORM_LIST_CONFIRM_ARCHIVE'] = 'Перенести выбранные формы в архив?';
+$MESS['REXP_FORM_LIST_CONFIRM_RESTORE'] = 'Вернуть выбранные формы из архива?';
+$MESS['REXP_FORM_LIST_CONFIRM_DELETE'] = 'Удалить выбранные формы? Это действие нельзя отменить.';
+$MESS['REXP_FORM_LIST_SELECT_FORMS'] = 'Выберите формы.';
+$MESS['REXP_FORM_LIST_GROUP_ACTION_ERROR'] = 'Не удалось выполнить групповое действие.';

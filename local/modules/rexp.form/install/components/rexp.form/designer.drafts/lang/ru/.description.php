@@ -1,0 +1,4 @@
+<?php
+$MESS['REXP_FORM_CMP_DESIGNER_DRAFTS_DESCRIPTION_001'] = 'Конструктор форм: черновики';
+$MESS['REXP_FORM_CMP_DESIGNER_DRAFTS_DESCRIPTION_002'] = 'Черновики формы';
+$MESS['REXP_FORM_CMP_DESIGNER_DRAFTS_DESCRIPTION_003'] = 'Конструктор форм Rexp';

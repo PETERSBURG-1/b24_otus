@@ -1,0 +1,4 @@
+<?php
+$MESS['REXP_FORM_CMP_DESIGNER_SUBMISSIONS_DESCRIPTION_001'] = 'Конструктор форм: журнал отправок';
+$MESS['REXP_FORM_CMP_DESIGNER_SUBMISSIONS_DESCRIPTION_002'] = 'Журнал отправок формы';
+$MESS['REXP_FORM_CMP_DESIGNER_SUBMISSIONS_DESCRIPTION_003'] = 'Конструктор форм Rexp';

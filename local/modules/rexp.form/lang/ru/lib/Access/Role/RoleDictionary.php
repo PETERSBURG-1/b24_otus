@@ -1,0 +1,4 @@
+<?php
+$MESS['REXP_FORM_LIB_ACCESS_ROLE_ROLEDICTIONARY_001'] = 'Администратор конструктора';
+$MESS['REXP_FORM_LIB_ACCESS_ROLE_ROLEDICTIONARY_002'] = 'Редактор форм';
+$MESS['REXP_FORM_LIB_ACCESS_ROLE_ROLEDICTIONARY_003'] = 'Пользователь форм';
