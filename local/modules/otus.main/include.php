@@ -7,6 +7,8 @@ Loader::registerAutoLoadClasses(
     [
         'Otus\\Main\\Crm\\EntityDetailsTabs' => 'lib/Crm/EntityDetailsTabs.php',
         'Otus\\Main\\Model\\CrmEntityDataTable' => 'lib/Model/CrmEntityDataTable.php',
+        'Otus\\Main\\Model\\BookTable' => 'lib/Model/BookTable.php',
+        'Otus\\Main\\Rest\\BookRest' => 'lib/Rest/BookRest.php',
         'Otus\\Main\\Iblock\\DoctorBookingProperty' => 'lib/Iblock/DoctorBookingProperty.php',
         'Otus\\Main\\Iblock\\DoctorBookingSync' => 'lib/Iblock/DoctorBookingSync.php',
         'Otus\\Main\\Iblock\\RequestDealSync' => 'lib/Iblock/RequestDealSync.php',
